@@ -21,9 +21,19 @@ int contaLetras(char letra, string texto)
 /*
 	Substitui todas as ocorrencias de 'letra1' por 'letra2' contidas em 'texto'
 */
-void substituirLetra(char letra1,char letra2, string texto)
-{
-}
+string substituirLetra(char letra1,char letra2, string texto)
+	{
+		int conta=conta_letra(texto);
+		int i;
+		for(i=0; i<conta; i=i+1)
+		{
+			if(texto[i]==letra1)
+			{
+				texto[i]=letra2;
+			}
+		}
+		return texto;
+	}
 
 /*
 	Conta todas as ocorrencias de 'palavra' contidas em 'texto'
