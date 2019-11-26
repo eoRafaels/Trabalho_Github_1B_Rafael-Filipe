@@ -66,12 +66,31 @@ string substituirPalavras(string palavra1, string palavra2, string texto)
     return texto;
 }
 
-int main(){
-
+int main()
+{
+    string texto,palavra,palavra1,palavra2;
+    char letra,letra1,letra2;
+    int qtdletra,contador;
 	cout << "Entre com o texto para fazer o teste:";
-
-
-
-
+    cin>>texto;
+    cout<<"Digite a letra:";
+    cin>>letra;
+    qtdletra=contaLetras(letra,texto);
+    cout<<qtdletra;
+    cout<<"Digite a letra 1:";
+    cin>>letra1;
+    cout<<"Digite a letra 2:";
+    texto=substituirLetra(letra1,letra2,texto);
+    cout<<texto;
+    cout<<"Digite a Palavra:";
+    cin>>palavra;
+    contador=contaPalavras(palavra,texto);
+    cout<<contador;
+    cout<<"Digite a palavra 1:";
+    cin>>palavra1;
+    cout<<"Digite a palavra 2:";
+    cin>>palavra2;
+    texto=substituirPalavras(palavra1,palavra2,texto);
+    cout<<texto;
 	return 0;
 }
