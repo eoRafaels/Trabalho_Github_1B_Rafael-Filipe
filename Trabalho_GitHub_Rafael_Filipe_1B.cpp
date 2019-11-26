@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 
 /*
@@ -6,6 +8,14 @@
 */
 int contaLetras(char letra, string texto)
 {
+    int qtd,qtdletra;
+    qtd=texto.lenght();
+    for(i=0,qtdletra=0;i<qtd;i++)
+    {
+        if(texto[i]==letra)
+            qtdletra++;
+    }
+    return qtdletra;
 }
 
 /*
