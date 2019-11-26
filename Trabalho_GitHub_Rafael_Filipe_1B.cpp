@@ -40,6 +40,15 @@ string substituirLetra(char letra1,char letra2, string texto)
 */
 int contaPalavras(string palavra, string texto)
 {
+    size_t pos=texto.find(palavra;
+    int contador=0;
+    while(pos!=string::npos)
+    {
+        contador++;
+        texto=texto.substr(pos+1);
+        pos=texto.find(palavra);
+    }
+    return contador;
 }
 
 /*
@@ -47,6 +56,7 @@ int contaPalavras(string palavra, string texto)
 */
 void substituirPalavras(string palavra1, string palavra2, string texto)
 {
+
 }
 
 int main(){
